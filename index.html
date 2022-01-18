@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ElectroClicks</title>
+	<meta name="Author" content="Salika Banu" />
+	<meta name="Description" content="Home page of the website." />
+	<meta name="Keywords" content="Electronics, television, mobile" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto+Slab&family=Roboto:ital,wght@1,100&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/00c4aeb2bc.js" crossorigin="anonymous"></script>
+	<style>
+		.contact-details p{
+			display: inline;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="Img/logg.png">
+		</div>
+
+		<div class="search">
+			<input type="text" placeholder="Search..">
+			<i class="fas fa-search"></i>
+		</div>
+		
+		<div class="nav">
+			<ul>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	<</header>
+
+	<section id="slider">
+		<image id="keyslide" width="1366px" height="350px">
+	</section>
+
+	<script>
+		var i=0;
+		var images = ["Img/hp1.jpg", "Website/Img/hp2.jpg", "Website/Img/hp3.webp", "Website/Img/hp4.jpg", "Website/Img/hp5.jpg"];
+
+		function keyslideImages(){
+			var show = document.getElementsById("keyslide");
+			show.src = images[i];
+			if(i < 4){
+				i++;
+			}
+			else{
+				i = 0;
+			}
+			setTimeout("keyslideImages()"), 3000;
+		}
+		window.onload = function(){keyslideImages()};
+	</script>
+
+
+<footer id="footer-content">
+	<div class="contact-us width-30">
+		  <div class="contact-heading">
+				 <h5>CONTACT US</h5>
+		  </div>
+		  <div class="contact-p">
+				 <div class="contact-address flex height">
+						<div class="contact-img">
+							  <a href="https://www.instagram.com/ezr.a__/" target="_blank"><i
+											class="fab fa-instagram"></i></a>
+						</div>
+						<div class="contact-text">
+							  Mahendrapul, Pokhara <br> Pokhara 33700
+						</div>
+				 </div>
+				 <div class="contact-number flex height">
+						<div class="contact-img">
+							  <a href="https://www.instagram.com/ezr.a__/" target="_blank"><i
+											class="fab fa-instagram"></i></a>
+						</div>
+						<div class="contact-text">
+							  (977) 980000000000
+						</div>
+				 </div>
+				 <div class="contact-mai flex height">
+						<div class="contact-img">
+							  <a href="https://www.instagram.com/ezr.a__/" target="_blank"><i
+											class="fab fa-instagram"></i></a>
+
+						</div>
+						<div class="contact-text">
+							  examlple@gmail.com
+						</div>
+				 </div>
+		  </div>
+	</div>
+
+	<div class="social-net width-30">
+		  <div class="social-heading">
+				 <h5>SOCIAL NETWORK</h5>
+		  </div>
+		  <div class="contact-pt">
+				 <div class="instagram flex height">
+						<div class="contact-img">
+							  <a href="https://www.instagram.com/ezr.a__/" target="_blank"><i
+											class="fab fa-instagram"></i></a>
+						</div>
+						<div class="contact-text">
+							  @ezr.a__
+						</div>
+				 </div>
+				 <div class="facebook flex height">
+						<div class="contact-img">
+							  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+						</div>
+						<div class="contact-text">
+							  Salika Banu
+						</div>
+				 </div>
+				 <div class="twitter flex height">
+						<div class="contact-img">
+							  <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+						</div>
+						<div class="contact-text">
+							  Salik
+						</div>
+				 </div>
+		  </div>
+	</div>
+
+	<div class="contact-us width-30">
+		  <div class="contact-heading">
+				 <h5>CONTACT US</h5>
+		  </div>
+		  <div class="contact-img-last">
+				 <img src="./Img/Blog.jpg" alt="">
+		  </div>
+	</div>
+	</div>
+
+
+</footer>
+<div class="cp">
+	<p>Copyright &copy; ElectroClicks Pvt. Ltd.</p>
+</div>
+</body>
+
+</html>
